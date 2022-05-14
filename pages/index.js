@@ -27,8 +27,8 @@ export default function Home() {
       git add -A 
       git commit -m "my first commit"
 
-      git config --global user.email "you@example.com"
-      git config --global user.name "Your Name"
+      git config --global user.email "csshahab47@gmail.com"
+      git config --global user.name "shkh"
       اول یک ریپازیتوری در ریموت خودت بساز 
       بعد اون لینک https که میده از ریپازیتوری رو بردار و بیار 
       برای پوش کردن 
@@ -41,8 +41,55 @@ export default function Home() {
     با دستور زیر میتونی آخرین ورژن آپدیت شده رو از گیت هاب اضافه کنی به پروژه ات
     
     git pull origin master
+
+با دستور زیر هم میتونی تغییرات لوکال رو به گیت سرور بدی 
+
+که بعدش ازت یوزر نیم و پسورد میخواد
+که البته بعدش پیغام زیر رو به ما داد
+موقعی که با گیت هاب داشتیم کار میکردیم
+ 
+Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+
+که باید به لینک زیر بری و حلش کنی 
+
+https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to
+
+For Linux, you need to configure the local GIT client with a username and email address,
+
+$ git config --global user.name "shkh"
+$ git config --global user.email "csshahab47@gmail.com"
+$ git config -l
+Once GIT is configured, we can begin using it to access GitHub. Example:
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `YOUR-REPOSITORY`...
+Username: shkh
+Password: <type your password or personal access token (GitHub)
+Now cache the given record in your computer to remembers the token:
+
+$ git config --global credential.helper cache
+
+
+If needed, anytime you can delete the cache record by:
+
+$ git config --global --unset credential.helper
+$ git config --system --unset credential.helper
+Now try to pull with -v to verify
+
+$ git pull -v
+
+Linux/Debian (Clone as follows):
+
+git clone https://<tokenhere>@github.com/<user>/<repo>.git
+
+
+
+git push origin master
+
     
     برای اینکه یک برنامه رو در termux ببندی مثل خارج شدن از برنامه های در حال اجرای node js باید ctrol + c  رو بزنی 
+    
+    ببین این پوش شده 
       
     </div>
   )
