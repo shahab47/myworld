@@ -89,6 +89,13 @@ git push origin master
     
     برای اینکه یک برنامه رو در termux ببندی مثل خارج شدن از برنامه های در حال اجرای node js باید ctrol + c  رو بزنی 
     
+    پاک کردن پوشه در لینوکس
+    
+    rm -rf myfolder
+    
+    پاک کردن فایل 
+    rm myfile.txt
+    
     ببین این پوش شده 
       
     </div>
