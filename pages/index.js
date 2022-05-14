@@ -106,6 +106,18 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 git pull --rebase
 
 
+PS: If you are annoyed by Git asking for username/token again and again, follow these three simple steps
+Run nano ~/.git-credentials. Remove the GitHub line and save it.
+
+git config --global credential.helper store
+
+Risky as physically the token is saved in file ~/.git-credentials
+
+Run git pull and provide the username and password only once
+
+It will not ask for the username and access token again and again now!
+
+
 
     
     برای اینکه یک برنامه رو در termux ببندی مثل خارج شدن از برنامه های در حال اجرای node js باید ctrol + c  رو بزنی 
