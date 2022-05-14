@@ -16,6 +16,7 @@ export default function Home() {
 
       git init 
       git add -A
+      git status
       اگر پیام زیر برات اومد
       warning: LF will be replaced by CRLF in pages/index.js.
       The file will have its original line endings in your working directory
@@ -24,11 +25,11 @@ export default function Home() {
 
       git config --global user.email "csshahab47@gmail.com" 
       git config --global user.name "shkh" 
+      
       git add -A 
       git commit -m "my first commit"
 
-      git config --global user.email "csshahab47@gmail.com"
-      git config --global user.name "shkh"
+    
       اول یک ریپازیتوری در ریموت خودت بساز 
       بعد اون لینک https که میده از ریپازیتوری رو بردار و بیار 
       برای پوش کردن 
@@ -65,6 +66,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `YOUR-REPOSITORY`...
 Username: shkh
 Password: <type your password or personal access token (GitHub)
+
 Now cache the given record in your computer to remembers the token:
 
 $ git config --global credential.helper cache
@@ -85,6 +87,17 @@ git clone https://<tokenhere>@github.com/<user>/<repo>.git
 
 
 git push origin master
+اگر بعد از دستور پوش این ارور رو گرفتی 
+
+! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/shahab47/myworld'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+git pull --rebase
+
+
 
     
     برای اینکه یک برنامه رو در termux ببندی مثل خارج شدن از برنامه های در حال اجرای node js باید ctrol + c  رو بزنی 
