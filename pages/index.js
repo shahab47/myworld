@@ -96,7 +96,6 @@ git push origin master
     پاک کردن فایل 
     rm myfile.txt
     
-    ببین این پوش شده 
       
     </div>
   )
