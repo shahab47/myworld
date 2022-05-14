@@ -34,6 +34,14 @@ export default function Home() {
       بعد اون لینک https که میده از ریپازیتوری رو بردار و بیار 
       برای پوش کردن 
       
+      git push origin master
+اگر ا
+رور داد یکبار این دستور رو بزن
+git add -A
+git commit -m "message"
+git pull --rebase
+
+      اگر که مطمئنی این پروژه لوکالت کاملا درسته فقط از دستور زیر استفاده کن
       git push -u origin master
 
       git push adress branchname 
