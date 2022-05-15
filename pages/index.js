@@ -7,7 +7,7 @@ export default function Home() {
       ببین که نصبه روی سیستمت یا نه 
     اگر نصب نبود 
     در Termux
-    apt update && apt upgrade
+    {/* apt update && apt upgrade */}
     pkg install git
 
     اگر میخواهی پروژه ای از گیت دانلود کنی بزن
@@ -71,51 +71,51 @@ $ git config -l
 Once GIT is configured, we can begin using it to access GitHub. Example:
 
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `YOUR-REPOSITORY`...
+ Cloning into `YOUR-REPOSITORY`...
 Username: shkh
-Password: <type your password or personal access token (GitHub)
+{/* Password: <type your password or personal access token (GitHub) */}
 
 Now cache the given record in your computer to remembers the token:
 
-$ git config --global credential.helper cache
+// $ git config --global credential.helper cache
 
 
-If needed, anytime you can delete the cache record by:
+// If needed, anytime you can delete the cache record by:
 
-$ git config --global --unset credential.helper
-$ git config --system --unset credential.helper
-Now try to pull with -v to verify
+// $ git config --global --unset credential.helper
+// $ git config --system --unset credential.helper
+// Now try to pull with -v to verify
 
-$ git pull -v
+// $ git pull -v
 
-Linux/Debian (Clone as follows):
 
-git clone https://<tokenhere>@github.com/<user>/<repo>.git
+
+{/* // git clone https://<tokenhere>@github.com/<user>/<repo>.git */}
 
 
 
 git push origin master
 اگر بعد از دستور پوش این ارور رو گرفتی 
 
-! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to 'https://github.com/shahab47/myworld'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-git pull --rebase
+{/* // ! [rejected]        master -> master (non-fast-forward) */}
+// error: failed to push some refs to 'https://github.com/shahab47/myworld'
+// hint: Updates were rejected because the tip of your current branch is behind
+// hint: its remote counterpart. Integrate the remote changes (e.g.
+// hint: 'git pull ...') before pushing again.
+// hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+// git pull --rebase
 
 
-PS: If you are annoyed by Git asking for username/token again and again, follow these three simple steps
-Run nano ~/.git-credentials. Remove the GitHub line and save it.
+// PS: If you are annoyed by Git asking for username/token again and again, follow these three simple steps
+// Run nano ~/.git-credentials. Remove the GitHub line and save it.
 
-git config --global credential.helper store
+// git config --global credential.helper store
 
-Risky as physically the token is saved in file ~/.git-credentials
+// Risky as physically the token is saved in file ~/.git-credentials
 
-Run git pull and provide the username and password only once
+// Run git pull and provide the username and password only once
 
-It will not ask for the username and access token again and again now!
+// It will not ask for the username and access token again and again now!
 
 
 
