@@ -128,7 +128,29 @@ git push origin master
     
     پاک کردن فایل 
     rm myfile.txt
+
+
+    سیستم مدیریت محتوا داریم ما که بهش میگن 
+    cms 
+    {/* https://www.youtube.com/watch?v=6FnwAbd2SDY&ab_channel=TraversyMedia */}
+    {/* https://strapi.io/integrations/nextjs-cms */}
+    بررسی سیستم های مدیریت محتوا 
+    {/* https://jamstack.org/headless-cms/ */}
+    https://jacekjeznach.com/
+https://bruno-simon.com/#cybertruck
+http://www.rleonardi.com/
+https://iuri.is/
+https://prashantsani.com/
+https://albinotonnina.com/
+http://riccardozanutta.com/
+http://driesvanbroeck.be/
+    روش‌های مختلفی برای پیاده سازی Web API‌ها وجود دارد که از جمله‌ی آنها REST و GraphQL را می‌توان نام برد
     
+ساخت اپلیکیشن برای موبایل با پایتون
+    https://realpython.com/mobile-app-kivy-python/
+
+
+    https://www.mongodb.com/languages/mern-stack-tutorial
       
     </div>
   )
