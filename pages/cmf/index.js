@@ -4,7 +4,7 @@ function index() {
   return (
     <div>
         <h1>
-
+            cmf
         </h1>
         <p>
             {/* echo "# reactToDoList" >> README.md */}
@@ -14,8 +14,6 @@ function index() {
             {/* https://www.youtube.com/watch?v=WrmndNpWSJw&ab_channel=DigitalOcean
             https://www.youtube.com/watch?v=9l3r0EFp9ow&ab_channel=CodeCreative */}
             {/* https://www.youtube.com/watch?v=599ogMbXIyA&ab_channel=Devistry */}
-            
-
             {/* https://strapi.io/integrations/nextjs-cms */}
             بررسی سیستم های مدیریت محتوا 
             {/* https://jamstack.org/headless-cms/ */}
