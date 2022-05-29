@@ -6,6 +6,7 @@ export default function Home() {
       <Link href={'/mongodb'}>صفحه مونگو دیبی</Link>
       <Link href={'/git'}>صفحه گیت هاب</Link>
       <Link href={'/termux'}>صفحه ترمیوکس</Link> 
+      <Link href={'/Javascript'}>صفحه جاوا اسکریپت</Link> 
     </div>
   )
 }
