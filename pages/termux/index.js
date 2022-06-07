@@ -13,6 +13,10 @@ function index() {
           
           پاک کردن فایل 
           rm myfile.txt
+
+          ساختن فایل
+          Touch app.js
+
         </p>
     </div>
   )
