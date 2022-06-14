@@ -17,3 +17,6 @@ https://youtu.be/MyiBAziEWUA
 
 https://prosemirror.net/examples/codemirror/
 این یکی کد ادیتور داره 
+و به وسیله این 
+https://codemirror.net/
+کد ادیتور رو هندل کرده
