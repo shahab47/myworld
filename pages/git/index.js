@@ -28,13 +28,18 @@ function index() {
     
     
             git init
-            git add README.md
+            git add -A
+            if(Error) ====> warning: LF will be replaced by CRLF in package.json.
+            use ====> git config core.autocrlf true
+  
+  
             git commit -m "first commit"
             git branch -M main
-            git remote add origin https://github.com/shahab47/reactToDoList.git
+            git remote add origin https://github.com/shahab47/[name of project]
             git push -u origin main
+    
             …or push an existing repository from the command line
-            git remote add origin https://github.com/shahab47/reactToDoList.git
+            git remote add origin https://github.com/shahab47/[name of project]
             git branch -M main
             git push -u origin main
             …or import code from another repository
