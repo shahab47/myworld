@@ -15,6 +15,8 @@ https://tiptap.dev/
 https://ckeditor.com/ckeditor-5/
 Draftjs
 Editorjs
+https://tiptap.dev/
+https://www.tiny.cloud/
 فیلم مقایسه اینها با هم
 https://youtu.be/MyiBAziEWUA
 
