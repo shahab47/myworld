@@ -7,6 +7,9 @@ Editor js
 
 https://quilljs.com/docs/quickstart/
 https://slatejs.org
+اینجا یاد داده چجوری باید سیو کنیم
+https://docs.slatejs.org/walkthroughs/06-saving-to-a-database
+این زیر هم کلی ویدیو داره واسه راه اندازیش
 https://youtube.com/playlist?list=PLN3n1USn4xllb05dQVmRbVtGP2aM4seVq
 https://tiptap.dev/
 https://ckeditor.com/ckeditor-5/
