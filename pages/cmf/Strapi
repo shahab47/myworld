@@ -2,3 +2,6 @@ https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
 
 توی لینک بالا توضیح داده چطور تغییر بدیم ادیتور استرپی رو به 
 Ckeditor
+npx create-strapi-app@latest my-project
+
+بعد از دستور بالا اگر quickstart انتخاب بشه همون sql lite به عنوان دیتابیس انتخاب میشه
