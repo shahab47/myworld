@@ -41,3 +41,6 @@ Python: Select Interprete
 python -m pip install matplotlib
 یا با دستور زیر هم میتونی نصب کنی 
 pip install pandas
+
+برای اجرای یک فایل پایتون هم میتونی دستور زیر رو وارد کنی 
+python App.py
