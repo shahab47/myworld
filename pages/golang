@@ -1,0 +1,29 @@
+اول از سایت پایین نصبش کن
+https://go.dev/
+https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
+
+بعد دقت کن که توی قسمت
+path systemenviroment 
+آدرس فایل اصلی
+C:\Program Files\Go\bin
+قرار گرفته باشه 
+اگر نبود توی پایتون توضیح دادم برو ببین
+
+بعد ورژن رو با دستور زیر چک کن
+
+go version
+
+بعد اکستنشن 
+go
+رو توی ویژال کد نصب کن
+
+حالا توی 
+vscode 
+ctrl + p 
+رو بزن تا خط فرمان باز بشه و بعد تایپ کن 
+>go: install/update Tools
+رو بزن و یعد تیک تمام گزینه ها رو فعال کن
+
+حالا فایلی که درست میکنی باید پسوند
+.go 
+رو داشته باشه 
