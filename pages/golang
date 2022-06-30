@@ -1,6 +1,6 @@
 اول از سایت پایین نصبش کن
 https://go.dev/
-https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
+
 
 بعد دقت کن که توی قسمت
 path systemenviroment 
@@ -65,3 +65,7 @@ Println
 برای اجرا هم کافیه که دستوز زیر رو بزنی
 
 go run main.go
+
+
+https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
+54:03
