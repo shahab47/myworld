@@ -31,7 +31,10 @@ ctrl + p
 
 اولین خط در زبان گو باید با یک پکیج دکلریشن شروع بشه
 که میشه نقطه شروع برنامه ما
+
 که این پکیج باید یک فانکشن هم حداقل داشته باشه
+در واقع کامپایلر گو میپرسه که از کچا شروع کنم 
+که ما بهش میگیم ازینجا
 
 
 package main
@@ -66,6 +69,49 @@ Println
 
 go run main.go
 
+====================
+صدا زدن فانکشن
+
+package main
+import "fmt"
+func main() {
+	fmt.Println("'hello world'")
+	callme()
+}
+func callme() {
+	fmt.Println("man shahabam")
+}
+
+======================
+
+ورودی دادن به فانکشن
+جالبه که در go ما باید نوع ورودی امون رو هم در فانکشن تابع مشخص کنیم 
+package main
+import "fmt"
+func main() {
+	
+	fmt.Println("'hello world'")
+	callme("shahab")
+}
+func callme(name string) {
+	fmt.Println("hello "+name)
+}
+
+======================
+متغیر ها
+
+var
+
+package main
+import "fmt"
+func main() {
+	var name = "shahab"
+	fmt.Println("'hello world'")
+	callme(name)
+}
+func callme(name string) {
+	fmt.Println("hello "+name)
+}
 
 https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
 54:03
