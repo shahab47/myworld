@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=FZ_edHixNXU&list=PL3Y-E4YSE4wYy0mFT9kDZ_Pe97fIabmG6&ab_channel=ParsclickTV
 اول از سایت پایین نصبش کن
 https://go.dev/
 
@@ -99,8 +100,23 @@ func callme(name string) {
 
 ======================
 متغیر ها
+به سه مدل نوشته میشن 
+مدل اول
+var name string
+name = "shahab"
 
-var
+مدل دوم موقعیه که مقدار اولیه رو هم داریم برای متغیر 
+var name string = "shahab"
+
+مدل سوم میتونیم نوع متغیر رو هم مشخص نکنیم 
+دقت کن توی این مدل کامپایلر خودش تشخیص میده و ما میتونیم در خط بعد تغییر بدیم متغیرمونو به اینتیجر یا عددی
+var name  = "shahab"
+
+مدل چهارم هم میتونیم ننویسیم 
+var 
+اما قبل مساوی یک دو نقطه باید قرار بدیم 
+name := "shahab"
+
 
 package main
 import "fmt"
@@ -112,6 +128,11 @@ func main() {
 func callme(name string) {
 	fmt.Println("hello "+name)
 }
+
+==============================================
+اضافه کردن ماژول 
+
+
 
 https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
 54:03
