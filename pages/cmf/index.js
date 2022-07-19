@@ -32,6 +32,10 @@ function index() {
 
 
             https://www.mongodb.com/languages/mern-stack-tutorial
+
+            بهترین هاشون رو میتنونی برای nextjs 
+            https://github.com/vercel/next.js/tree/canary/examples/cms-strapi
+            اینجا پیدا کنی
     
         </p>
     </div>
