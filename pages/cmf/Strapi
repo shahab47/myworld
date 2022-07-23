@@ -1,9 +1,29 @@
 توی فایل slatejs در گوگل درایو داری 
 
+
+
+========================Change Editor strapi====================================
+1-tinymce
+https://hashnode.com/post/how-to-replace-strapis-default-wysiwyg-editor-with-tinymce-editor-ckrbzh1fv0036ujs1gmn2c5p5
+
+2-QuillEditor
+https://strapi.io/blog/how-to-change-the-default-wysiwy-to-quill-editor
+https://github.com/hubertnare/strapi4-wysiwyg-replacement
+
+3-Toast UI 
+https://strapi.io/blog/change-the-default-wysiwyg-to-toast-ui-editor
+
+
+4-Ckeditor
 https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
 
-توی لینک بالا توضیح داده چطور تغییر بدیم ادیتور استرپی رو به 
-Ckeditor
+
+
+========================Change Editor strapi====================================
+
+
+
+
 npx create-strapi-app@latest my-project
 
 بعد از دستور بالا اگر quickstart انتخاب بشه همون sql lite به عنوان دیتابیس انتخاب میشه
