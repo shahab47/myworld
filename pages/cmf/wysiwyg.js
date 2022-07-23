@@ -5,6 +5,10 @@ Tinymce
 Vev
 Editor js
 
+
+حالا این صفحه اومده و یک لیست خیلی خوب ازشون درست کرده 
+https://github.com/JefMari/awesome-wysiwyg
+
 https://quilljs.com/docs/quickstart/
 https://slatejs.org
 اینجا یاد داده چجوری باید سیو کنیم
