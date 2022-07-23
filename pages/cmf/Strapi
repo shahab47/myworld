@@ -31,7 +31,14 @@ https://strapi.io/blog/change-the-default-wysiwyg-to-toast-ui-editor
 
 4-Ckeditor
 https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
-
+نصب این خیلی ساده بودش رفتیم توی فحه زیر و کد پایینی که داده بود رو زدیم تو ترمینال یک بار
+yarn build 
+گرفتیم و یک باز
+yarn develop 
+زدیم و اومدش
+https://market.strapi.io/plugins/@_sh-strapi-plugin-ckeditor
+تو لینک زیر هم نحوه فارسی کردن این ادیتور رو توضیح داده
+https://ckeditor.com/docs/ckeditor5/latest/features/ui-language.html#righttoleft-rtl-languages-support
 
 
 ========================Change Editor strapi====================================
