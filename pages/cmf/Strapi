@@ -6,11 +6,25 @@
 1-tinymce
 https://hashnode.com/post/how-to-replace-strapis-default-wysiwyg-editor-with-tinymce-editor-ckrbzh1fv0036ujs1gmn2c5p5
 
+demo 
+https://www.tiny.cloud/docs/demo/full-featured/
+
 2-QuillEditor
+
+demo 
+https://quilljs.com/
+
 https://strapi.io/blog/how-to-change-the-default-wysiwy-to-quill-editor
 https://github.com/hubertnare/strapi4-wysiwyg-replacement
 
+
+
 3-Toast UI 
+
+خیلی خوبه ولی فارسی ضعیفه
+demo 
+https://ui.toast.com/tui-editor
+
 https://strapi.io/blog/change-the-default-wysiwyg-to-toast-ui-editor
 
 
