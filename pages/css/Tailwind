@@ -1,4 +1,15 @@
 https://tailwindcss.com/docs
+=============== transform html to jsx ===================
+توی سایت زیر میتونی یک صفحه دیزاین شده 
+html 
+بدی تا تبدیلش کنه به 
+jsx
+یعنی میاد 
+class  ===== > className   and     style = "" =======> style :{{}} 
+درست میکنه برات تا ارور نیاد
+https://transform.tools/html-to-jsx
+
+
 ====================== in next js ========================
 
 npm i -D tailwindcss postcss autoprefixer
