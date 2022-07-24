@@ -1,0 +1,25 @@
+======================= Data Fetching =====================
+
+
+next js
+
+1- swr getStaticProps
+
+توسط این متد اطلاعات سمت کلاینت سرو میشن و به سئو سایت کمک میکنه
+دقت داشته باشید که نباید اطلاعات حساس رو به این روش منتقل کنی 
+
+
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+2-ssr getServerSideProps
+این متد هم انگار سمت کلاینت سرو میکنه ولی یه فرقایی با بالایی داره 
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
