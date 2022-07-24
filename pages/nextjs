@@ -7,7 +7,12 @@ next js
 
 توسط این متد اطلاعات سمت کلاینت سرو میشن و به سئو سایت کمک میکنه
 دقت داشته باشید که نباید اطلاعات حساس رو به این روش منتقل کنی 
+توی این متد وقتی که یوزر ریکوئستی میفرسته داده ها ایجاد میشن
+برای پست های استرپی از این استفاده میکنیم 
 
+در این حالت میتونیم از 
+react hook 
+هم استفاده کنیم 
 
 export async function getStaticProps(context) {
   return {
@@ -16,10 +21,85 @@ export async function getStaticProps(context) {
 }
 
 2-ssr getServerSideProps
-این متد هم انگار سمت کلاینت سرو میکنه ولی یه فرقایی با بالایی داره 
+این متد هم  سمت کلاینت سرو میکنه ولی یه فرقایی با بالایی داره و نباید اطلاعات حساس رو اینجا رندر بگیریم
+فرقش هم اینه این اطلاعات به وسیله مرورگر
+excute 
+نمیتونن بشن 
 export async function getServerSideProps(context) {
   return {
     props: {}, // will be passed to the page component as props
   }
 }
 
+اولین کار اینه که پیجی که میخوایم براش دیتا ها رو داشته باشیم ایجاد کنیم 
+
+و متد فچینگ خودمون رو قرار میدیم ما از متد اول استفاده کردیم 
+
+import React from 'react'
+import { fetcher } from '../lib/api';
+import Layout from "../components/Layout";
+import Posts from '../components/Posts';
+
+function posts( {posts}) {
+  return (
+    <Layout>
+        <Posts posts={posts}/>
+    </Layout>
+  )
+}
+
+export default posts;
+
+export async function getStaticProps() {
+    const postResponse = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/posts`);
+    console.log(postResponse)
+
+    return {
+      props: {
+            posts : postResponse,
+      }, // will be passed to the page component as props
+    }
+}
+  
+  
+برای اینکه کارمون راحتتر بشه یک فایل 
+.env
+در ریشه درست میکنیم 
+
+NEXT_PUBLIC_STRAPI_URL='http://localhost:1337/api'
+
+و باز هم برای اینکه کارمون راحتتر بشه یک پوشه در روت درست میکنیم به نام 
+lib
+و داخلش یک فایل درست میکنیم به نام 
+api.js
+
+export async function fetcher(url, option = {}){
+    let response;
+    if (!response){
+        response = await fetch(url);
+
+    }else{
+        response = await fetch(url, option);
+    }
+    const data = await response.json();
+    return data
+}
+
+جالا میتونیم واسه پست های خودمون هم یک کامپوننت ایجاد کنیم 
+import React from 'react'
+
+function Posts({posts}) {
+    console.log(posts)
+  return (
+    <ul>
+        {posts && posts.data.map((post)=>{
+            return(<li key={post.id}>
+               <a href={`post/`+ post.id}>{post.attributes.Title}</a>     
+            </li>)
+        }
+        )}
+    </ul>
+  )
+}
+
+export default Posts
