@@ -67,3 +67,32 @@ export default function Document() {
     </Html>
   )
 }
+
+حالا میریم سراغ 
+layout 
+تو پوشه 
+components
+یک فایل js 
+ایجاد کن به نام 
+Layout.js
+این فایل چیدمان ماست و معنی اسمش هم میشه چیدمان در واقع ما هر چی میخوایم که همیشه در صفحه ما وچود داشته باشه رو در این کامپوننت قرار میدیم 
+مثلا نوبار میخوایم همیشه باشه تو صفحه امون یا اینکه فوتر همیشه باشه باید اینجا تعریفش کنیم
+ حالا فایل رو با کد زیر پر میکنیم مثلا از صفحه زیر تعدادی کد میتونیم ببینیم 
+ https://nextjs.org/docs/basic-features/layouts
+ 
+ بعد از انکه درستش کردی میتونی بری به فایل 
+ index.js
+ و تمام آیتم ها را در قالب 
+ Layout 
+ قرار بدی 
+ 
+ 
+ import Layout from "../components/Layout";
+
+export default function Home() {
+  return(
+    <Layout>
+      <h1>my khosh sannat</h1>
+    </Layout>
+  );
+}
