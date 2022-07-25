@@ -1,0 +1,19 @@
+ساختار اصولی یک فایل 
+html
+بصورت زیر است 
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1></h1>
+            </section>
+        </main>
+    </body>
+</html>
+
