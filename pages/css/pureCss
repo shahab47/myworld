@@ -12,14 +12,14 @@
 3- External File 
 یه پوشه به نام استایل درست میکنیم 
 و داخلش فایلی بصورت مثال 
-style.css
+main.css
 درست میکنیم 
 و بعد داخل 
 head
 از تگ لینک استفاده میکنیم 
 <link>
         <title></title>
-        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 ======================= add font
@@ -84,15 +84,25 @@ h2
     color: aqua;
 }
 
+3- *
+سلکتور ستاره یعنی تمام المنت های ما در واقع هر چی  در این بلاک بزنیم 
+تمامی المنت های ما رو در بر میگیره
+*{
+    box-sizing: border-box;
+}
+
 ============================ type of tag  or CSS Box Model
 هر المنتی در اچ تی ام ال یا اینلاین تگ هست و یا بلاک تگ
 1- inline tag
+اگر دو تا اینلاین المنت رو زیر هم بنویسیم در کد هامون 
+در کنار هم قرار میگیرن در سایت ما 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 یک باکس را نمیتوانیم برای این تگ ها مشخص کنیم 
 <a/>
 2- block tag
+https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
 یک باکس رو میتونیم براش در نظر بگیریم 
-این تگ ها دارای 
-padding border margin 
-هستند
+اگر دو تا بلاک لول رو زیر هم بنویسیم در کد هامون 
+در ویو سایت هم اینا زیر هم قرار میگیرن 
 مثل 
 <section/>
