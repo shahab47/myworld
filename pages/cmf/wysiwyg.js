@@ -5,6 +5,13 @@ Tinymce
 Vev
 Editor js
 
+ckeditor 
+که توی استرپی هم نصب میشه و با لینک زیر میشه 
+https://github.com/abedi-ir/ckeditor5-direction
+direction متنن رو درست کرد 
+تا بشه فارسی نوشت باهاش
+البته توی استرپی مشکل داریم باهاش هنور
+
 
 حالا این صفحه اومده و یک لیست خیلی خوب ازشون درست کرده 
 https://github.com/JefMari/awesome-wysiwyg
