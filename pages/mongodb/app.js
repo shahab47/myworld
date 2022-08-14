@@ -1,0 +1,5 @@
+const express = require('express')
+const router = require('./routes/post-routes')
+const app = express()
+app.use('/api/posts',router)
+app.listen(5000)
