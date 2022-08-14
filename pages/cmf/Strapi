@@ -1,0 +1,65 @@
+توی فایل slatejs در گوگل درایو داری 
+
+
+
+========================Change Editor strapi====================================
+1-tinymce
+https://hashnode.com/post/how-to-replace-strapis-default-wysiwyg-editor-with-tinymce-editor-ckrbzh1fv0036ujs1gmn2c5p5
+
+demo 
+https://www.tiny.cloud/docs/demo/full-featured/
+
+2-QuillEditor
+
+demo 
+https://quilljs.com/
+
+https://strapi.io/blog/how-to-change-the-default-wysiwy-to-quill-editor
+پروژه نمونه اش خرابه 
+https://github.com/hubertnare/strapi4-wysiwyg-replacement
+
+
+
+3-Toast UI 
+
+خیلی خوبه ولی فارسی ضعیفه
+demo 
+https://ui.toast.com/tui-editor
+
+https://strapi.io/blog/change-the-default-wysiwyg-to-toast-ui-editor
+
+
+4-Ckeditor
+https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
+نصب این خیلی ساده بودش رفتیم توی فحه زیر و کد پایینی که داده بود رو زدیم تو ترمینال یک بار
+yarn build 
+گرفتیم و یک باز
+yarn develop 
+زدیم و اومدش
+https://market.strapi.io/plugins/@_sh-strapi-plugin-ckeditor
+تو لینک زیر هم نحوه فارسی کردن این ادیتور رو توضیح داده
+https://ckeditor.com/docs/ckeditor5/latest/features/ui-language.html#righttoleft-rtl-languages-support
+
+
+========================Change Editor strapi====================================
+
+
+
+
+npx create-strapi-app@latest my-project
+
+بعد از دستور بالا اگر quickstart انتخاب بشه همون sql lite به عنوان دیتابیس انتخاب میشه
+https://www.youtube.com/watch?v=WrmndNpWSJw&ab_channel=DigitalOcean
+https://www.youtube.com/watch?v=9l3r0EFp9ow&ab_channel=CodeCreative
+==================================================================
+ba next js
+
+https://www.youtube.com/watch?v=gweg5fl597Q&t=1053s&ab_channel=yoursTRULY
+
+Amizeshe version jadid starpi ba next js
+https://www.youtube.com/watch?v=EnuvFyJE6dg&list=PL7Q0DQYATmvjXSuHfB8CY_n_oUeqZzauZ&ab_channel=Strapi
+
+
+
+درست کردن صفحه لاگین
+https://www.youtube.com/watch?v=U2rRxzjruKg&ab_channel=WatchandLearn

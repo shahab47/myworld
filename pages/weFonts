@@ -1,0 +1,63 @@
+فونت وزیر 
+https://rastikerdar.github.io/vazirmatn/
+فونت های گوگل رو هم از اینجا میگیرن
+https://fonts.google.com/
+با این سایت هم میتونی فونت هایی که دانلود میکنی رو تبدیل کنی به فرمت 
+wff2
+https://www.onlinewebfonts.com/woff2-converter
+داخل این پوشه یک پوشه هست به نام 
+فونت های وزیر چندین مدل داره با اعداد انگلیسی و بدون انگلیسی که از راهنماش بخون 
+
+================ in nextjs and tailwindcss ==============================
+
+اول یک فولدر در پوشه 
+pulic 
+ایجاد کن به نام 
+fonts
+بعد فایل های
+wff2
+رو داخلش کپی کن
+
+حالا این کد رو به فایل 
+globals.css
+اضافه کن 
+که البته آدرس اینا رو باید عوض کنی 
+
+@Layer base {
+    @font-face{
+        font-family:'vazirLight';
+        src:url('/fonts/Vazirmatn-FD-Light.woff2') format('woff2');
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+    }
+}
+
+بعد به فایل 
+tailwind.config.js
+برو و در قسمت
+
+theme: {
+    extend: {
+      fontFamily:{
+        vazirLight:'vazirLight, cursive '
+      }
+    },
+  },
+  
+  اینا رو اضافه کن 
+  
+  حالا برو به یک h1
+  و این کلاس رو بهش بده
+  
+  <h1 className="font-vazirLight">خوش صنعت تقدیم میکند</h1>
+  
+  یک بار ببند و باز کن باید اعمال شده باشه 
+  
+  اگر هم میخوای یک فونت رو به کل برنامه ات بدی در تگ 
+  body 
+  فایل 
+  _document.js
+  ین کار رو بکن
+  
+================ in nextjs and tailwindcss ==============================

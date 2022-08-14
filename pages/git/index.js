@@ -5,18 +5,49 @@ function index() {
     <div>
         <h1>صفحه گیت</h1>
         <p>
+    ========================== git get me when createnew repository ===================================
+    یه عکس هست تو همین فولدرخیلی خوب توضیح داده مراحل گیت رو 
+    
+               *in Local host
+               Local host = 1- workingDirectoy  2- Staging Area  3-LocalRepo
+
+               *in Remote
+                Remote = 4-Remote Repo 
+                
+                1- workingDirectoy ===== git add ====> 2- Staging Area
+                
+                2- Staging Area ===git commit ===> 3-LocalRepo
+                
+                3-LocalRepo  ===git push ====> 4-Remote Repo 
+                
+                4-Remote Repo ====git pull ====> 3-LocalRepo
+
+                3-LocalRepo ==== git checkout ====> 1- workingDirectoy
+
+                3-LocalRepo ==== git merge ====> 1- workingDirectoy
+    
+    
             git init
-            git add README.md
+            git add -A
+            if(Error) ====> warning: LF will be replaced by CRLF in package.json.
+            use ====> git config core.autocrlf true
+  
+  
             git commit -m "first commit"
             git branch -M main
-            git remote add origin https://github.com/shahab47/reactToDoList.git
+            git remote add origin https://github.com/shahab47/[name of project]
             git push -u origin main
+    
             …or push an existing repository from the command line
-            git remote add origin https://github.com/shahab47/reactToDoList.git
+            git remote add origin https://github.com/shahab47/[name of project]
             git branch -M main
             git push -u origin main
             …or import code from another repository
             You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+    ========================== git get me when createnew repository ===================================
+    
+    
+    ============================== تنظیمات اولیه در گیت ==============================================
 
                 اول یک بار یزن 
                 git --version
@@ -25,11 +56,40 @@ function index() {
                 در Termux
                 {/* apt update && apt upgrade */}
                 pkg install git
-
+============================================= تنظیمات اولیه در گیت ====================================
+  
+  
+============================== clone from git ==========================================================
                 اگر میخواهی پروژه ای از گیت دانلود کنی بزن
                 clone "url"
                 url رو میتونی از همون آدرس بار گیت هم برداری 
+                
+============================== clone from git ==========================================================
+============================== git pull  ===============================================================
+               git pull origin master
+============================== git pull  ===============================================================
+============================== git push  ===============================================================
+               برای اینکه پروژه ای که داخل لوکال هست رو بفرستی به هاست 
+               
+                اول ادد تو استیج میکنی با دستور زیر تمام تغییرات رو میبری توی استیج 
+                1- git add -A
 
+                بعد تغییرات رو با دستور زیر کامیت میکن 
+                2- git commit -m 'message'
+
+                پروژه لوکال = REMOTENAME = orgin
+                پروژه روی گیت = BRANCHNAME = main = master
+                3- git push  <REMOTENAME> <BRANCHNAME>
+                اگر که مطمئنی این پروژه لوکالت کاملا درسته فقط از دستور زیر استفاده کن
+                3.1- git push -u origin master
+                
+                بعد ازت یوزر نیم رو میپرسه 
+                4- shkh
+                
+                بعدشم ازت پسورد رو میپرسه که اگر با 
+                یت هاب هستی باید توکنی که ساختی رو بدی یه جای پسورد
+                
+                
                 git init 
                 git add -A
                 git status
@@ -57,8 +117,7 @@ function index() {
                 git commit -m "message"
                 git pull --rebase
 
-                اگر که مطمئنی این پروژه لوکالت کاملا درسته فقط از دستور زیر استفاده کن
-                git push -u origin master
+                
 
                 git push adress branchname 
                 

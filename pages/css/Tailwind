@@ -1,0 +1,109 @@
+https://tailwindcss.com/docs
+=============== transform html to jsx ===================
+توی سایت زیر میتونی یک صفحه دیزاین شده 
+html 
+بدی تا تبدیلش کنه به 
+jsx
+یعنی میاد 
+class  ===== > className   and     style = "" =======> style :{{}} 
+درست میکنه برات تا ارور نیاد
+https://transform.tools/html-to-jsx
+
+
+====================== in next js ========================
+
+npm i -D tailwindcss postcss autoprefixer
+
+دستور زیر رو بزن تا فایل 
+tailwind.config.js
+برات درست بشه 
+
+npx tailwindcss init -p
+
+بعد همون فایل رو به صورت زیر ادیت کن 
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+تو این مرحله اگر فایل 
+Home.module.css
+در پوشه 
+style 
+رو که به صورت پیشفرض در پروژه قرار داره رو دیلیت نردی دیلیت کن 
+
+و دوباره در همون پوشه 
+styles 
+فایل 
+globals.css
+رو به صورت زیر تغییر بده 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+حالا کافیه کد زیر رو توی 
+index.js 
+بزاری تا ببینی کانفیگ انجام شده یا نه 
+
+<h1 className="font-bold text-5xl">Hello world</h1>
+
+حالا برای اینکه یک بکگراند به کل صفحات اپلیکیشن ما نسبت داده بشه
+باید فایل 
+_document.js
+رو بسازیم و در تگ
+body 
+کد های tailwind 
+رو برای بکگراند قرار بدیم
+
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html>
+      <Head />
+      <body className='h-14 bg-gradient-to-r from-cyan-500 to-blue-500'>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+
+حالا میریم سراغ 
+layout 
+تو پوشه 
+components
+یک فایل js 
+ایجاد کن به نام 
+Layout.js
+این فایل چیدمان ماست و معنی اسمش هم میشه چیدمان در واقع ما هر چی میخوایم که همیشه در صفحه ما وچود داشته باشه رو در این کامپوننت قرار میدیم 
+مثلا نوبار میخوایم همیشه باشه تو صفحه امون یا اینکه فوتر همیشه باشه باید اینجا تعریفش کنیم
+ حالا فایل رو با کد زیر پر میکنیم مثلا از صفحه زیر تعدادی کد میتونیم ببینیم 
+ https://nextjs.org/docs/basic-features/layouts
+ 
+ بعد از انکه درستش کردی میتونی بری به فایل 
+ index.js
+ و تمام آیتم ها را در قالب 
+ Layout 
+ قرار بدی 
+ 
+ 
+ import Layout from "../components/Layout";
+
+export default function Home() {
+  return(
+    <Layout>
+      <h1>my khosh sannat</h1>
+    </Layout>
+  );
+}

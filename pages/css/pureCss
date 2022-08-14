@@ -1,0 +1,108 @@
+=================== type of style
+1- inline selector
+
+<section style="background-color: blue;">
+
+2- in head tag
+برای سثو مشکل داره 
+<style>
+      h1 {background-color: blue}
+</style>
+
+3- External File 
+یه پوشه به نام استایل درست میکنیم 
+و داخلش فایلی بصورت مثال 
+main.css
+درست میکنیم 
+و بعد داخل 
+head
+از تگ لینک استفاده میکنیم 
+<link>
+        <title></title>
+        <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+======================= add font
+
+توی فولدر پروژه یک فولدر به نام 
+fonts 
+میزاریم 
+و بعد فونتمون رو کپی میکنیم که بهتره فرمتش 
+wpf2
+باشه 
+حالا توی فایل 
+style.css
+میایم و فونت رو معرفی میکنیم 
+
+@font-face {
+    font-family: "vazir-li";
+    src: url(../fonts/Vazirmatn-Light.woff2);
+}
+
+و دوباره در همون فایل میتونیم هر عنصری که میخوایم رو سلکت کنیم 
+
+h1 {
+    font-family: "vazir-li";
+}
+ اگر هم بخوای به کل برنامه بدیش باید از تگ بادی استفاده کنی
+ 
+ =============================== selector
+ 
+ 1- by id
+ سلکتور های آیدی فقط به یه المنت میشه نسبتشون داد و نباید اسمشون هم تکراری باشه 
+ 
+ <h1 id="hiText">hi hi </h1>
+ 
+ #hiText{
+    color: brown;
+}
+یا اگر بخوایم بگیم توی آیدی
+hiText
+بیا و هر المنت 
+h3 
+که هست رو بهش این استایل رو بده باید بنویسیم 
+ #hiText h3{
+    color: brown;
+}
+
+2- by Class
+
+<h1 class="textGroup">hi hi </h1>
+<h1 class="textGroup">hi hi 2 </h1>
+
+.textGroup{
+    color: aqua;
+}
+
+یا اگر بخوایم بگیم در کلاس 
+textGroup 
+فقط اونایی که 
+h2 
+هستن رو بیا و این استایل رو بهشون بده باید بنویسیم 
+
+.textGroup h2{
+    color: aqua;
+}
+
+3- *
+سلکتور ستاره یعنی تمام المنت های ما در واقع هر چی  در این بلاک بزنیم 
+تمامی المنت های ما رو در بر میگیره
+*{
+    box-sizing: border-box;
+}
+
+============================ type of tag  or CSS Box Model
+هر المنتی در اچ تی ام ال یا اینلاین تگ هست و یا بلاک تگ
+1- inline tag
+اگر دو تا اینلاین المنت رو زیر هم بنویسیم در کد هامون 
+در کنار هم قرار میگیرن در سایت ما 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+یک باکس را نمیتوانیم برای این تگ ها مشخص کنیم 
+<a/>
+2- block tag
+https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+یک باکس رو میتونیم براش در نظر بگیریم 
+اگر دو تا بلاک لول رو زیر هم بنویسیم در کد هامون 
+در ویو سایت هم اینا زیر هم قرار میگیرن 
+مثل 
+<section/>

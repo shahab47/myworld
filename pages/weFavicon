@@ -1,0 +1,45 @@
+Web Essential 
+
+اول به سایت زیر برو 
+https://favicon.io/
+و بعد ازاین که فایلت رو آپلود کردی بهت یه زیپ میده اون فایل زیپ رو ببر توی پوشه 
+public 
+سیوش کن 
+مثلا یک فایل هست به نام 
+faviicon.ico
+که این فایل فایلیه که قرار میگیره در تب مرورگرت
+
+
+حالا به فایل
+_document.js
+
+برو
+و عبارت 
+<link rel="shortcut icon" href="/favicon.ico" />
+در head اضافه کن 
+دقت کن اگر در خود پوشه public 
+ریخته باشی آدرسش میشه مثل بالا
+
+
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
+      <body >
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+
+
+اگر نیومد یکبار از نرمافزار بیلد بگیر 
+npm run build
+
+
+

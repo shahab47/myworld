@@ -1,0 +1,138 @@
+https://www.youtube.com/watch?v=FZ_edHixNXU&list=PL3Y-E4YSE4wYy0mFT9kDZ_Pe97fIabmG6&ab_channel=ParsclickTV
+اول از سایت پایین نصبش کن
+https://go.dev/
+
+
+بعد دقت کن که توی قسمت
+path systemenviroment 
+آدرس فایل اصلی
+C:\Program Files\Go\bin
+قرار گرفته باشه 
+اگر نبود توی پایتون توضیح دادم برو ببین
+
+بعد ورژن رو با دستور زیر چک کن
+
+go version
+
+بعد اکستنشن 
+go
+رو توی ویژال کد نصب کن
+
+حالا توی 
+vscode 
+ctrl + p 
+رو بزن تا خط فرمان باز بشه و بعد تایپ کن 
+>go: install/update Tools
+رو بزن و یعد تیک تمام گزینه ها رو فعال کن
+
+حالا فایلی که درست میکنی باید پسوند
+.go 
+رو داشته باشه 
+
+
+اولین خط در زبان گو باید با یک پکیج دکلریشن شروع بشه
+که میشه نقطه شروع برنامه ما
+
+که این پکیج باید یک فانکشن هم حداقل داشته باشه
+در واقع کامپایلر گو میپرسه که از کچا شروع کنم 
+که ما بهش میگیم ازینجا
+
+
+package main
+
+func main() {
+	
+}
+دقت کن باید نام این پکیج  با حرف کوچک باشه 
+و بهتره که با نام فایلتم یکی باشه 
+مثلا فایل
+main.go
+پکیجشم میشه 
+package main
+
+حالا برای انجام پرینت باید از یک پکیج دیگه ای استفاده کنیم به نام 
+fmt 
+به شکل زیر ایمپوزتش میگیریم و ازش استفاده میکنیم
+
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello Go")
+}
+
+دقت کن متد
+Println
+حرف اولش بزرگ هست و تمام متد هایی که از پکیج های دیگه ایمپورت میشن در گو اول حرفشون بزرگ هست
+
+برای اجرا هم کافیه که دستوز زیر رو بزنی
+
+go run main.go
+
+====================
+صدا زدن فانکشن
+
+package main
+import "fmt"
+func main() {
+	fmt.Println("'hello world'")
+	callme()
+}
+func callme() {
+	fmt.Println("man shahabam")
+}
+
+======================
+
+ورودی دادن به فانکشن
+جالبه که در go ما باید نوع ورودی امون رو هم در فانکشن تابع مشخص کنیم 
+package main
+import "fmt"
+func main() {
+	
+	fmt.Println("'hello world'")
+	callme("shahab")
+}
+func callme(name string) {
+	fmt.Println("hello "+name)
+}
+
+======================
+متغیر ها
+به سه مدل نوشته میشن 
+مدل اول
+var name string
+name = "shahab"
+
+مدل دوم موقعیه که مقدار اولیه رو هم داریم برای متغیر 
+var name string = "shahab"
+
+مدل سوم میتونیم نوع متغیر رو هم مشخص نکنیم 
+دقت کن توی این مدل کامپایلر خودش تشخیص میده و ما میتونیم در خط بعد تغییر بدیم متغیرمونو به اینتیجر یا عددی
+var name  = "shahab"
+
+مدل چهارم هم میتونیم ننویسیم 
+var 
+اما قبل مساوی یک دو نقطه باید قرار بدیم 
+name := "shahab"
+
+
+package main
+import "fmt"
+func main() {
+	var name = "shahab"
+	fmt.Println("'hello world'")
+	callme(name)
+}
+func callme(name string) {
+	fmt.Println("hello "+name)
+}
+
+==============================================
+اضافه کردن ماژول 
+
+
+
+https://www.youtube.com/watch?v=R4ZhHRCDpdY&ab_channel=neonlearn
+54:03

@@ -1,0 +1,7 @@
+وقتی یک فایلی نصب نمیشه و ارور
+installing directory must be on local hard drive
+رو میده اول
+cmd
+رو با دسترسی ادمین باز کن و بعد دستور زیر رو وارد کن
+installing directory must be on local hard drive
+msiexec /i "C:\New folder\nameoffile" WIXUI_DONTVALIDATEPATH="1"
