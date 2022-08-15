@@ -44,3 +44,12 @@ header
     line-height: 25px;
     border-radius: 4px;
   }
+
+حالا باید توی فایل 
+_app.js
+تمام فایل های 
+css
+رو وارد کنیم 
+
+import '../styles/globals.css';
+import '../styles/Nav.css';
