@@ -1,0 +1,46 @@
+برای اینکه به نکست جی اس استایل بدی کافیه که 
+در پوشه 
+styles
+یک فایل 
+css 
+ّبه نام همون کامپوننت ایجاد کنی 
+بعدش 
+سلکتور ها رو بنویسی 
+مثلا این div رو ببین
+
+import React from 'react';
+function Nav() {
+  return (
+    <div class="header">
+      <a href="#default" class="logo"><img src='./apple-touch-icon.png' width={45} height={45}></img></a>
+        <div class="header-right">
+          <a href="#about">درباره ما</a>
+          <a href="#contact">ارتباط با ما</a>
+          <a class="active" href="#home">صفحه اصلی</a>
+        </div>
+    </div>
+  )
+}
+که کلاسش هست 
+header
+حالا با سلکتور هدر در فایل سی اس اس خودمون میتونیم بهش استایل بدیم 
+
+مثل زیر 
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
