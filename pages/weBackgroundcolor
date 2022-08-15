@@ -1,0 +1,24 @@
+==============================================
+in tailwind css
+در فایل 
+_document.js
+<body className='h-14 bg-fuchsia-700 font-vazirLight'>
+        <Main />
+        <NextScript />
+ </body>
+ 
+ در قسمت body 
+ میتونیم کلاس نیم بهش بدیم 
+ 
+ ============================================
+ in pure css
+ 
+ در فایل global.css 
+ body {
+  background-color: #5c4084;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+ 
