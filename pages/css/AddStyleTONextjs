@@ -1,3 +1,4 @@
+============================ روش اول 
 برای اینکه به نکست جی اس استایل بدی کافیه که 
 در پوشه 
 styles
@@ -12,7 +13,7 @@ import React from 'react';
 function Nav() {
   return (
     <div class="header">
-      <a href="#default" class="logo"><img src='./apple-touch-icon.png' width={45} height={45}></img></a>
+      <a href="#default" className="logo"><img src='./apple-touch-icon.png' width={45} height={45}></img></a>
         <div class="header-right">
           <a href="#about">درباره ما</a>
           <a href="#contact">ارتباط با ما</a>
@@ -45,11 +46,47 @@ header
     border-radius: 4px;
   }
 
-حالا باید توی فایل 
-_app.js
-تمام فایل های 
+حالا باید توی هر فایلی که کامپوننت رو صدا کردیم 
+فایل 
 css
-رو وارد کنیم 
-
+ مربوطه رو وارد کنیم 
+مثلا 
+app.js
+یا 
+index.js
+یا هر فایل دیگه ای 
 import '../styles/globals.css';
 import '../styles/Nav.css';
+
+===================== روش دوم 
+فایلی د nextjs وجود داره به نام 
+Home.module.css
+مثلا داخل این فایل ما استایل زیر رو داریم 
+
+.ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 10px;
+  background: pink;
+}
+
+.nav {
+  position: sticky;
+  
+  top: 0;
+  background-color: #9d9;
+}
+هر فایلی که میخوای استایل به وارد کنی باید اینطور این فایل رو ایمپورت کنی 
+
+حالا فایل استایل ها رو ایمپورت میکنیم توی کامپوننت مورد نظرمون و به این شکل واردش میکنیم 
+
+function Nav() {
+  return (
+    <div>
+      <nav className={styles.Nav}>
+        <ul className={styles.ul}>
+          <li>
+            <a href="#">Home</a>
+          </li>
