@@ -1,0 +1,17 @@
+==================== in next js 
+نوبار چیزیه که باید در تمام صفحات بیاد برای اینکه در تمام صفحات پیزی رو داشته باشیم باید کامپوننتش رو داخل 
+_app.js
+وارد کنیم 
+
+import '../styles/globals.css'
+import Nav from '../components/Nav'
+
+function MyApp({ Component, pageProps }) {
+  <>
+  <Nav/>
+  return <Component {...pageProps} />
+  </>
+}
+
+export default MyApp
+
