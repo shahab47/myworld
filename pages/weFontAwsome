@@ -14,9 +14,6 @@ how to use svg in react
 رو بررسی کنی 
 
 
-============================================================
-https://react-icons.github.io/react-icons/search?q=user
-از این کتابخونه هم میتونی استفاده کنی
 
 ============================================================
 material ui icon
@@ -24,5 +21,27 @@ https://mui.com/material-ui/icons/#svgicon
 
 
 ===========================================================
+
 این لعنتی پر طرفدارترینشونه
 https://github.com/react-icons/react-icons#readme
+این صفحه اصلیشه
+https://react-icons.github.io/react-icons
+
+1
+از اینجا میتونی آینکونایی که میخوای رو سرچ کنی و برداری 
+https://react-icons.github.io/react-icons/search?q=logout
+بعد باید اول آیکون رو ایمپورت کنی مثلا از کتابخونه 
+BoxIcons
+برش داشتی پس باید به ته کد ایمپورتت 
+bi
+اضافه کنی 
+و اسم آیکون هم در پرانتز بنویسی
+کد زیر نمونه هست 
+import { BiHomeCircle } from "react-icons/bi";
+
+<li>
+            <a href="#">Home</a> <BiHomeCircle size={'2rem'}/>
+</li>
+
+در قسمت سایز هم میتونی ابعادش رو تنظیم کنی 
+
