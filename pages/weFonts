@@ -8,6 +8,25 @@ https://www.onlinewebfonts.com/woff2-converter
 داخل این پوشه یک پوشه هست به نام 
 فونت های وزیر چندین مدل داره با اعداد انگلیسی و بدون انگلیسی که از راهنماش بخون 
 
+
+================ in nextjs and purecss ==============================
+هر فونتی که میخوای رو به این صورت در فایل 
+global.css
+وارد میکنی 
+
+@font-face {
+  font-family: 'VazirmatnRegular';
+  src: url('../public/fonts/Vazirmatn-FD-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+حالا کافیه توی سلکتور 
+body
+بزنی 
+font-family: 'VazirmatnRegular';
+================ in nextjs and purecss ==============================
+
 ================ in nextjs and tailwindcss ==============================
 
 اول یک فولدر در پوشه 
@@ -61,3 +80,6 @@ theme: {
   ین کار رو بکن
   
 ================ in nextjs and tailwindcss ==============================
+
+
+
