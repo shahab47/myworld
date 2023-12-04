@@ -4,7 +4,8 @@
 Tinymce
 Vev
 Editor js
-
+https://progressivewebninja.com/how-to-use-react-quill-with-nextjs/
+https://progressivewebninja.com/setting-up-editorjs-with-nextjs-13/
 ckeditor 
 که توی استرپی هم نصب میشه و با لینک زیر میشه 
 https://github.com/abedi-ir/ckeditor5-direction
